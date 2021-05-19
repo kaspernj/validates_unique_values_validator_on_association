@@ -1,0 +1,5 @@
+en:
+  activerecord:
+    errors:
+      messages:
+        hadnt_unique_values: "hadn't unique values: %{joined_duplicates}"

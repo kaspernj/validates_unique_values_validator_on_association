@@ -18,9 +18,12 @@ ActiveRecord::Schema.define(version: 2021_05_19_153344) do
   end
 
   create_table "options", force: :cascade do |t|
+    t.integer "element_id", null: false
     t.string "value", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["element_id"], name: "index_options_on_element_id"
   end
 
+  add_foreign_key "options", "elements"
 end

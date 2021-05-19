@@ -21,8 +21,7 @@ class UniqueValuesOnAssociationValidator < ActiveModel::EachValidator
     end
 
     if duplicates.any?
-      options[:joined_duplicates] = duplicates.join(", ")
-      object.errors.add(attribute, :hadnt_unique_values, **options)
+      object.errors.add(attribute, :hadnt_unique_values, joined_duplicates: duplicates.join(", "), **options)
     end
   end
 end

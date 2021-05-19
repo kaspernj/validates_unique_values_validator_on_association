@@ -1,5 +1,5 @@
 da:
   activerecord:
     errors:
-      attributes:
+      messages:
         hadnt_unique_values: "havde ikke unikke værdier: %{joined_duplicates}"
