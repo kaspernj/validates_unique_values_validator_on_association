@@ -1,0 +1,5 @@
+rvm: true
+before_script:
+  - cd spec/dummy && rails db:schema:load RAILS_ENV=test
+script:
+  - bundle exec rspec
