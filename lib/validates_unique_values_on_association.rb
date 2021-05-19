@@ -1,0 +1,6 @@
+require_relative "validates_unique_values_on_association/version"
+require_relative "validates_unique_values_on_association/railtie"
+require_relative "unique_values_on_association_validator"
+
+module ValidatesUniqueValuesOnAssociation
+end
