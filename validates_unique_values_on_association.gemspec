@@ -1,14 +1,15 @@
 require_relative "lib/validates_unique_values_on_association/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "validates_unique_values_on_association"
-  spec.version     = ValidatesUniqueValuesOnAssociation::VERSION
-  spec.authors     = ["kaspernj"]
-  spec.email       = ["k@spernj.org"]
-  spec.homepage    = "https://github.com/kaspernj/validates_unique_values_on_association"
-  spec.summary     = "Validate if an association has unique values on a specific attribute."
+  spec.name = "validates_unique_values_on_association"
+  spec.version = ValidatesUniqueValuesOnAssociation::VERSION
+  spec.authors = ["kaspernj"]
+  spec.email = ["k@spernj.org"]
+  spec.homepage = "https://github.com/kaspernj/validates_unique_values_on_association"
+  spec.summary = "Validate if an association has unique values on a specific attribute."
   spec.description = "Validate if an association has unique values on a specific attribute."
-  spec.license     = "MIT"
+  spec.license = "MIT"
+  spec.required_ruby_version = ">= 2.5"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -24,4 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "factory_bot_rails"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rubocop"
+  spec.add_development_dependency "rubocop-performance"
+  spec.add_development_dependency "rubocop-rails"
+  spec.add_development_dependency "rubocop-rspec"
 end

@@ -1,5 +1,5 @@
 class UniqueValuesOnAssociationValidator < ActiveModel::EachValidator
-  def validate_each(object, attribute, value)
+  def validate_each(object, attribute, _value) # rubocop:disable Metrics/AbcSize
     association = object.association(attribute)
     target = association.target
     child_attribute_name = options.fetch(:attribute)
