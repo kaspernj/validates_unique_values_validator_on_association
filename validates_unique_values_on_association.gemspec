@@ -9,7 +9,8 @@ Gem::Specification.new do |spec|
   spec.summary = "Validate if an association has unique values on a specific attribute."
   spec.description = "Validate if an association has unique values on a specific attribute."
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.5"
+  spec.metadata = {"rubygems_mfa_required" => "true"}
+  spec.required_ruby_version = ">= 2.7"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
