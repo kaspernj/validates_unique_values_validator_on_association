@@ -19,10 +19,12 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/kaspernj/validates_unique_values_on_association"
   spec.metadata["changelog_uri"] = "https://github.com/kaspernj/validates_unique_values_on_association"
+  spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   spec.add_dependency "rails", ">= 6.0.0"
+  spec.add_development_dependency "appraisal"
   spec.add_development_dependency "factory_bot_rails"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rubocop"
