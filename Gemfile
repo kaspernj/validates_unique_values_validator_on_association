@@ -5,6 +5,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gemspec
 
 group :development do
+  gem "appraisal"
+  gem "factory_bot_rails"
+  gem "rspec-rails"
+  gem "rubocop"
+  gem "rubocop-performance"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
   gem "sqlite3"
 end
 
