@@ -7,7 +7,7 @@ describe ValidatesUniqueValuesOnAssociation do
     element.options.build(value: "Donald Duck")
     element.options.build(value: "Donald Duck")
 
-    expect(element).to be_invalid
+    expect(element).not_to be_valid
     expect(element.errors.full_messages).to eq ["Options hadn't unique values: Donald Duck"]
   end
 
@@ -16,7 +16,7 @@ describe ValidatesUniqueValuesOnAssociation do
       element.options.build(value: "Donald Duck")
       element.options.build(value: "Donald Duck")
 
-      expect(element).to be_invalid
+      expect(element).not_to be_valid
       expect(element.errors.full_messages).to eq ["Options havde ikke unikke værdier: Donald Duck"]
     end
   end
