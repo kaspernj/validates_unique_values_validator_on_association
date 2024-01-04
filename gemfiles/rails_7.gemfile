@@ -8,10 +8,11 @@ group :development do
   gem "appraisal"
   gem "factory_bot_rails"
   gem "rspec-rails"
-  gem "rubocop"
-  gem "rubocop-performance"
-  gem "rubocop-rails"
-  gem "rubocop-rspec"
+  gem "rubocop", require: false
+  gem "rubocop-factory_bot", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
   gem "sqlite3"
 end
 
