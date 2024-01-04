@@ -98,6 +98,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.5)
     minitest (5.17.0)
     net-imap (0.3.4)
       date
@@ -109,12 +110,13 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.14.1-x86_64-linux)
+    nokogiri (1.15.5)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.2.0.0)
       ast (~> 2.4.1)
-    racc (1.6.2)
+    racc (1.7.3)
     rack (2.2.6.2)
     rack-test (2.0.2)
       rack (>= 1.3)
@@ -179,6 +181,8 @@ GEM
       parser (>= 3.1.1.0)
     rubocop-capybara (2.17.0)
       rubocop (~> 1.41)
+    rubocop-factory_bot (2.24.0)
+      rubocop (~> 1.33)
     rubocop-performance (1.15.2)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
@@ -197,7 +201,8 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.0-x86_64-linux)
+    sqlite3 (1.6.9)
+      mini_portile2 (~> 2.8.0)
     thor (1.2.1)
     timeout (0.3.1)
     tzinfo (2.0.6)
@@ -214,13 +219,15 @@ PLATFORMS
 DEPENDENCIES
   appraisal
   factory_bot_rails
+  nokogiri (= 1.15.5)
   rails (= 6.1.4.6)
   rspec-rails
   rubocop
+  rubocop-factory_bot
   rubocop-performance
   rubocop-rails
   rubocop-rspec
-  sqlite3
+  sqlite3 (= 1.6.9)
   validates_unique_values_on_association!
 
 BUNDLED WITH
