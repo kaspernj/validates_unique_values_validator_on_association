@@ -115,7 +115,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.16.0-x86_64-linux)
+    nokogiri (1.15.5-x86_64-linux)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.2.0.0)
@@ -198,7 +198,7 @@ GEM
       rubocop (~> 1.33)
       rubocop-capybara (~> 2.17)
     ruby-progressbar (1.11.0)
-    sqlite3 (1.7.0-x86_64-linux)
+    sqlite3 (1.6.9-x86_64-linux)
     thor (1.2.1)
     timeout (0.3.1)
     tzinfo (2.0.6)
@@ -215,6 +215,7 @@ PLATFORMS
 DEPENDENCIES
   appraisal
   factory_bot_rails
+  nokogiri (= 1.15.5)
   rails (= 7.0.2.2)
   rspec-rails
   rubocop
@@ -222,7 +223,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
-  sqlite3
+  sqlite3 (= 1.6.9)
   validates_unique_values_on_association!
 
 BUNDLED WITH

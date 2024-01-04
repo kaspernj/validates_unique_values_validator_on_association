@@ -258,13 +258,14 @@ PLATFORMS
 DEPENDENCIES
   appraisal
   factory_bot_rails
+  nokogiri (= 1.15.5)
   rspec-rails
   rubocop
   rubocop-factory_bot
   rubocop-performance
   rubocop-rails
   rubocop-rspec
-  sqlite3
+  sqlite3 (= 1.6.9)
   validates_unique_values_on_association!
 
 BUNDLED WITH
