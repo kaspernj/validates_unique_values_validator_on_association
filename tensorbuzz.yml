@@ -7,27 +7,62 @@ builds:
     environment:
       RUBY_VERSION: 2.7.8
     name: Ruby 2.7.8, Rails 6
+    paths:
+      - "**"
+      - "!.github/**"
+      - "!.gitignore"
+      - "!.rubocop.yml"
+      - "!MIT-LICENSE"
+      - "!README.md"
     script:
       - bundle exec appraisal "rails 6" rspec
   build_2:
     environment:
       RUBY_VERSION: 2.7.8
     name: Ruby 2.7.8, Rails 7
+    paths:
+      - "**"
+      - "!.github/**"
+      - "!.gitignore"
+      - "!.rubocop.yml"
+      - "!MIT-LICENSE"
+      - "!README.md"
     script:
       - bundle exec appraisal "rails 7" rspec
   build_3:
     environment:
       RUBY_VERSION: 3.3.0
     name: Ruby 3.3.0, Rails 6
+    paths:
+      - "**"
+      - "!.github/**"
+      - "!.gitignore"
+      - "!.rubocop.yml"
+      - "!MIT-LICENSE"
+      - "!README.md"
     script:
       - bundle exec appraisal "rails 6" rspec
   build_4:
     environment:
       RUBY_VERSION: 3.3.0
     name: Ruby 3.3.0, Rails 7
+    paths:
+      - "**"
+      - "!.github/**"
+      - "!.gitignore"
+      - "!.rubocop.yml"
+      - "!MIT-LICENSE"
+      - "!README.md"
     script:
       - bundle exec appraisal "rails 7" rspec
   build_5:
     name: Linters
+    paths:
+      - "**"
+      - "!.github/**"
+      - "!.gitignore"
+      - "!config/locales/**"
+      - "!MIT-LICENSE"
+      - "!README.md"
     script:
       - bundle exec rubocop
